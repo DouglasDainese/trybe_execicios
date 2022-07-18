@@ -1,0 +1,42 @@
+body :nth-child(odd) h3  {
+    font-style: italic;    
+}
+
+
+body :nth-child(3):hover {
+        border: 2px solid red;
+    }
+    body :nth-child(3){
+        background: rgb(243, 68, 68);
+    }
+
+body :nth-child(4):hover {
+    border:2px solid green;
+    }
+    body :nth-child(4) {
+    background: rgb(149, 243, 9);
+    }
+
+body :nth-child(5):hover {
+    border: 2px solid #d3d3d3;
+    }
+    body :nth-child(5) {
+        background: Grey;
+        padding: 5px;
+    }
+
+body :nth-child(6):hover {
+    border: 2px solid rgb(25, 0, 255);
+    }
+    body :nth-child(6) {
+    background: rgb(0, 0, 70);
+    }
+    body :nth-child(6) h3{
+    color: #d3d3d3;
+    }
+body :nth-child(7):hover {
+    border: 2px solid rgb(196, 250, 236);
+    }
+    body :nth-child(7) {
+    background: aquamarine;
+    }

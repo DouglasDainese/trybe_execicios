@@ -1,0 +1,21 @@
+#cabeçalho {
+    background-image:url(https://itmidia-s3.s3.sa-east-1.amazonaws.com/itforum.com.br/wp-content/uploads/2019/10/internet-completa-50-anos-1.jpg);
+    background-size:cover;
+    background-position:top;
+    padding: 150px;
+    }
+
+ol, ul {
+        list-style: none;
+}
+
+h1, p {
+    text-align: center;
+    }
+li:hover {
+    background-color: deepskyblue;
+    }
+
+li:active {
+    font-style: italic;
+    }
