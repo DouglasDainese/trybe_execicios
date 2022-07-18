@@ -19,4 +19,30 @@ li {
     }
 .textitalicli {
     font-weight:bold;
+    }
+ul#linguagens :nth-child(-n+3) {
+    color: blue;
+    }
+.java {
+    background: fixed pink;
+    }
+ul li a#stack:hover{
+    color: orange;
+    font-weight: bold;
+    }
+a#w3s:hover {
+    color: green;
+    font-weight: bold;
+    }
+a#mdn:hover {
+    color: black;
+    font-weight: bold;
+}
+a#devd:hover {
+    color: yellow;
+    font-weight: bold;
+}
+a#trybe:hover {
+    color: greenyellow;
+    font-weight: bold;
 }
