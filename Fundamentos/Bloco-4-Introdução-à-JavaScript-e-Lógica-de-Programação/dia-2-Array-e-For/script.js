@@ -8,15 +8,23 @@ for (let num of numbers) {
 
 let media =  sum / numbers.length;
 
-console.log (sum);
-console.log (numbers.length);
-console.log (media);
+let bigNumber = 0;
+let primeiroFor=0;
+let segundoFor=0;
 
-if (media > 20 ) {
-    console.log ("valor maior que 20")
+for (let index2 = 0; index2 < numbers.length; index2 += 1) {
+
+   primeiroFor = numbers[index2];
+
+   for (let index = 0; index < numbers.length; index += 1) {
+        
+        segundoFor = numbers[index];
+
+        if ( primeiroFor > segundoFor && primeiroFor > bigNumber) {
+            bigNumber=primeiroFor;
+           }
+    }
+
 }
-else {
-    console.log ("valor menor ou igual a 20")
-}
 
-
+console.log (bigNumber);
