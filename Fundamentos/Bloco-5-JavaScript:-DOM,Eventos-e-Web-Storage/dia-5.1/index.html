@@ -42,13 +42,38 @@
          function mudarCor (local, cor){
          let elemento = local;
           elemento.style.backgroundColor = cor;
-        }
-            
+        }   
         mudarCor (document.getElementsByClassName('main-content')[0], 'rgb(76,164,109)');
+
       // Crie e execute uma função que mude a cor do quadrado vermelho para branco.
-      let element = document.getElementsByClassName('center-content')[0];
-      console.log(element);
-        mudarCor (document.getElementsByClassName('center-content')[0], 'white')
+       mudarCor (document.getElementsByClassName('center-content')[0], 'white');
+
+      // Crie e execute uma função que corrija o texto da tag <h1>
+      function mudarTexto (local, texto){
+        let elemento = local;
+        elemento.innerHTML =  texto;
+      } 
+      
+      mudarTexto (document.getElementsByTagName('h1')[0], 'Exercício 5.1 - JavaScript');
+
+      // Crie e execute uma função que modifique todo o texto da tag <p> para maiúsculo.
+      function textoMaiusculo (local) {
+        let textoOrig = local.innerText;
+        let textoM = textoOrig.toUpperCase();
+        local.innerText = textoM;
+      }
+
+      // textoMaiusculo (document.getElementsByTagName('p')[0]);
+     
+      let tagsP = document.getElementsByTagName('p');
+      for (let i; i < tagsP.length; i +=1) {
+        textoMaiusculo (document.getElementsByTagName('p')[i]);
+        console.log (document.getElementsByTagName('p')[i]);
+      }
+      console.log (document.getElementsByTagName('p'));
+
+      let element = document.getElementsByTagName("p")[1].innerText;
+      
     </script>
   </body>
 </html>
