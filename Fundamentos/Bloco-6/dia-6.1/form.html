@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>concurso TrybeTrip</title>
+</head>
+<body>
+    <h1>Concurso TrybeTrip</h1>
+    <form action="">
+        <label for="nome-completo">Nome:
+            <input type="text" name="nome-completo" min="10" max="40" required>
+        </label>
+        <br>
+        <label for="input-email">Email:
+            <input type="email" name="input-email" id="email1" min="10" max="40" required>
+        </label>
+        <br>
+        <label for="dest-1">
+            <input type="radio" name="Destinos" id="dest-1">Cidade
+        </label>
+        <label for="dest-2">
+            <input type="radio" name="Destinos" id="dest-2">Campo
+        </label>
+        <label for="dest-3">
+            <input type="radio" name="Destinos" id="dest-3">Praia
+        </label>
+        <label for="dest-4">
+            <input type="radio" name="Destinos" id="dest-4">Montanhas
+        </label>
+        <br>
+        <p>Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?</p>
+        <textarea name="caixa-texto" id="caixa-resposta" maxlength="500" cols="65" rows="10"></textarea>
+        <br>
+        <label for="dataviagem">Data:
+        <input type="date" name="dataviagem" id="dataviagem"> 
+        </label>
+        <br>
+        <label for="autorização-email-market">Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?
+            <input type="checkbox" name="autorização-email-market" id="email-mkt-ok">
+        </label>
+        <br>
+        <label for="aautorização-direito-imagem">Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.
+            <input type="checkbox" name="autorização-direito-imagem" id="direitoimagemok" required>
+        </label>
+        
+    </form>
+</body>
+</html>
