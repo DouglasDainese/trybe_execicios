@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="node_modules/bulma/css/bulma.css">
+    <title>concurso TrybeTrip</title>
+</head>
+<body>
+    <section  class="container">
+        <div class="field">
+            <h1 class="title is-1">Concurso TrybeTrip</h1>
+        </div>
+    </section>
+    <form action="" >
+        <div class="field">
+            <label for="nome-completo" class="label">Nome:
+                <input class="input" type="text" name="nome-completo" min="10" max="40" required id="name">
+            </label>
+        </div>
+        <br>
+        <div class="field">
+            <label class="label" for="input-email">Email:
+                <div class="control has-icons-left has-icons-right">
+                    <input class="input is-success" type="email" name="input-email" id="email1" min="10" max="40" required>
+                </div>
+            </label>
+        </div>
+        <br>
+        <label class="radio" for="dest-1">
+            <input  type="radio" name="Destinos" id="dest-1">Cidade
+        </label>
+        <label class="radio" for="dest-2">
+            <input type="radio" name="Destinos" id="dest-2">Campo
+        </label>
+        <label class="radio" for="dest-3">
+            <input type="radio" name="Destinos" id="dest-3">Praia
+        </label>
+        <label class="radio" for="dest-4">
+            <input type="radio" name="Destinos" id="dest-4">Montanhas
+        </label>
+        <br>
+        <p>Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?</p>
+        <textarea class="textarea" name="caixa-texto" id="caixa-resposta" maxlength="500" cols="65" rows="10"></textarea>
+        <br>
+        <label for="dataviagem">Data:
+        <input type="date" name="dataviagem" id="dataviagem"> 
+        </label>
+        <br>
+        <label class="checkbox" for="autorização-email-market">Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?
+            <input type="checkbox" name="autorização-email-market" id="email-mkt-ok">
+        </label>
+        <br>
+        <label class="checkbox" for="autorização-direito-imagem">Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.
+            <input type="checkbox" name="autorização-direito-imagem" id="direitoimagemok" required>
+        </label>
+        <br>
+        <div class="control">
+            <button class="button is-primary" type="submit" id="btnsend">Enviar</button>
+            <button class="button is-secondary" type="reset">Apagar</button>
+        </div>
+    </form>
+    <script src="scipt.js"></script>
+</body>
+</html>
