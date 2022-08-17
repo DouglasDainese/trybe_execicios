@@ -14,3 +14,4 @@ describe (`Teste se a função realiza as somas corretamente`, () =>{
         expect(()=>sum(4, "5")).toThrow("parameters must be numbers");
     })
 })
+
