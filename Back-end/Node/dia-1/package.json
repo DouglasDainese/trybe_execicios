@@ -1,0 +1,12 @@
+{
+  "name": "my-scripts",
+  "version": "1.0.0",
+  "description": "exercicios de node",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "bmi": "node index.js"
+  },
+  "author": "Douglas",
+  "license": "ISC"
+}
