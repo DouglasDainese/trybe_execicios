@@ -1,4 +1,5 @@
 class Person {
+  private _age = Person.getAge(this._birthDate);
 
   constructor(
     private _name: string,
@@ -13,6 +14,10 @@ class Person {
 
   public get birthDate(): Date {
     return this._birthDate;
+  }
+
+  public get age(): number {
+    return this._age;
   }
 
   public set name(nome: string) {
