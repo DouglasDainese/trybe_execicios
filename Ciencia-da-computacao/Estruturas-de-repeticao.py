@@ -16,7 +16,8 @@ for rating in ratings:
 print(new_ratings)
 
 # Exercício 2
-# Percorra a lista do exercício 1 e imprima “Múltiplo de 3” se o elemento for divisível por 3.
+# Percorra a lista do exercício 1 e imprima “Múltiplo de 3”
+# se o elemento for divisível por 3.
 
 for ratingImpar in new_ratings:
     if ratingImpar % 3 == 0:
