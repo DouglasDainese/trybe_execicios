@@ -22,5 +22,5 @@ def insertion_sort(numbers):
     return numbers
 
 
-numbers = [7, 5, 9, 2, 6, 8]
+numbers = [7, 5, 9, 2, 1, 90, 55, 33, 6, 8]
 print(insertion_sort(numbers))
