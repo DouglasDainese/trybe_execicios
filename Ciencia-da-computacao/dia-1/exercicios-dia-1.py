@@ -18,8 +18,8 @@ def get_smallest_number(numbers):
     return smaller_number
 
 
-print(min(numbers))
-print(get_smallest_number(numbers))
+# print(min(numbers))
+# print(get_smallest_number(numbers))
 
 # Exercício 2: Faça um programa que, dado um valor n qualquer, tal que n > 1,
 #  imprima na tela um triângulo retângulo com n asteriscos de base.
@@ -27,14 +27,30 @@ print(get_smallest_number(numbers))
 
 
 def printAst(num):
-    colunaPiramede = list(range(num))
+    colunaPiramede = list(range(1, num + 1))
     # print(colunaPiramede)
     for linha in colunaPiramede:
-        arrow = list(range(linha + 1))
-        piramede = ""
-        for coluna in arrow:
-            piramede += "o"
-        print(piramede)
+        print(linha * "*")
+        # arrow = list(range(linha + 1))
+        # piramede = ""
+        # for coluna in arrow:
+        #     piramede += "o"
+        # print(piramede)
 
 
 printAst(10)
+
+# Exercício 3: Crie uma função que receba um número inteiro N e retorne
+# o somatório de todos os números de 1 até N.
+# Por exemplo, para N = 5, o valor esperado será 15.
+
+
+def reduce(num):
+    count = 0
+    if num > 0:
+        count += num
+        return count + reduce(num - 1)
+    return count
+
+
+print(reduce(300))
