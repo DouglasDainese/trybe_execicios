@@ -5,10 +5,17 @@ class Stack:
     def size(self):
         return len(self._data)
 
+    def sizeMax(self):
+        if self.size() > 2:
+            return True
+        return False
+
     def is_empty(self):
         return not bool(self.size())
 
     def push(self, value):
+        if self.sizeMax():
+            return f"Erro capacidade maxima da pilha excedida, tamanho atual é de {self.size()}"
         self._data.append(value)
 
     def pop(self):
